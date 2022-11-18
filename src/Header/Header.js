@@ -1,14 +1,17 @@
 import { Search, ShoppingBasket } from "@mui/icons-material";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
   return (
     <div className="header">
-      <img
-        className="header_logo"
-        src="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-symbol-png-logo-vector-9.png"
-      />
+      <Link to="/">
+        <img
+          className="header_logo"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+        />
+      </Link>
       <div className="header_search">
         <input className="header_searchInput" type="text"></input>
         <Search className="header_searchIcon"></Search>
@@ -34,3 +37,5 @@ export default function Header() {
     </div>
   );
 }
+
+//https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-symbol-png-logo-vector-9.png
